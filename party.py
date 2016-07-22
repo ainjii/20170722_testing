@@ -24,15 +24,7 @@ def is_mel(name, email):
 
     """
 
-    is_mel = False
-    names_and_emails_not_allowed = ['mel', 'melitpolski', 'melon']
-
-    for string in names_and_emails_not_allowed:
-        if string in name.lower() or string in email.lower():
-            is_mel = True
-            break
-
-    return is_mel
+    return 'mel' in name.lower() or 'mel' in email.lower()
 
 def most_and_least_common_type(treats):
     """Given list of treats, return {most, least} common types.
